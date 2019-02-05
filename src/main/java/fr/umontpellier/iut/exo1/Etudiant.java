@@ -31,5 +31,6 @@ public class Etudiant {
     public void setNom(String nom) {
         this.nom = nom;
     }
+
 }
 
