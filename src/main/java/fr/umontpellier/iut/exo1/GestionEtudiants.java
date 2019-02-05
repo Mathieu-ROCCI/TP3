@@ -1,6 +1,7 @@
 package fr.umontpellier.iut.exo1;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 import static java.time.Month.JANUARY;
 
@@ -8,10 +9,15 @@ public class GestionEtudiants {
     public static void main(String[] args) {
         Etudiant lolo = new Etudiant("Deiana", "Philippe", LocalDate.of(1997, JANUARY, 31), "fifou34@caramail.com", "18 rue Morgue");
         Etudiant toto = new Etudiant("Deiana", "Philippe", LocalDate.of(1997, JANUARY, 31), "fifou34@caramail.com", "18 rue Morgue");
-        lolo=toto;
+        Etudiant coco = new Etudiant("Deiana", "Philippe", LocalDate.of(1997, JANUARY, 31), "fifou34@caramail.com", "18 rue Morgue");
+        Etudiant popo = new Etudiant("Deiana", "Philippe", LocalDate.of(1997, JANUARY, 31), "fifou34@caramail.com", "18 rue Morgue");
+        Departement monDepInfo = new Departement("Informatique", "Occitanie");
 
-        System.out.println(lolo.toString());
-        System.out.println(lolo==toto);
+        monDepInfo.inscrire(lolo);
+        monDepInfo.inscrire(toto);
+        monDepInfo.inscrire(coco);
+        monDepInfo.inscrire(popo);
+        System.out.println(monDepInfo);
         }
 
     }
