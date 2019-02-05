@@ -27,5 +27,9 @@ public class Etudiant {
                 ", adresse postale='" + adressePost + '\'' +
                 '}';
     }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
 }
 
